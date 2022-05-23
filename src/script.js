@@ -46,7 +46,7 @@ particles.position.y=20
 particles.position.z=50
 particles.scale.x=6
 particles.scale.y=8
-particles.scale.z=3
+particles.scale.z=-3
 console.log(particles)
 
 
@@ -56,7 +56,7 @@ scene.add(camera,particles)
 const renderer = new THREE.WebGLRenderer({
     canvas:canvas
 })
-renderer.setClearAlpha(0)
+renderer.setClearAlpha(0.03)
 renderer.setSize(sizes.width,sizes.height)
 
 const mouse = new THREE.Vector2();
@@ -75,15 +75,10 @@ function onMouseMove( event ) {
 	mouse.y = ( event.clientY - windowHalf.x );
     const x = event.pageX,
     y = event.pageY;
-// blok.style.top = (y + 20) + 'px';
-// blok.style.left = (x + 20) + 'px';
+
 }
 
-// function onMouseWheel( event ) {
 
-//   camera.position.z += event.deltaY * 0.1; // move camera along z-axis
-
-// }
     
 function onResize( event ) {
 
