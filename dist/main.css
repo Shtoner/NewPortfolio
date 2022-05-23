@@ -1,0 +1,228 @@
+
+
+
+html,body
+{
+    overflow: visible;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.webgl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+}
+/* #scene{
+    position: fixed;
+} */
+#block{
+    position: relative;
+    display: inline;
+    width: 40%;
+    left:5%;
+    top:5%;
+    background: #ac0a5077;
+
+}
+#text{
+    position: relative;
+    display: inline;
+    left:45%;
+    top:5%;
+    width:40%;
+    background: #0cd77877;
+
+}
+.inner{
+    pointer-events: auto;
+}
+
+ .nametag{
+     display: inline-block;
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #00000077;
+    border: 1px solid #ffffff77;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 100;
+    font-size: 14px;
+    cursor: help;
+    z-index: 1;
+}
+
+.contact-me{
+    margin-top: 12%;
+    margin-left: 5%;
+}
+
+#playPong{
+    pointer-events: auto;
+}
+
+#playPongSS{
+    position: absolute;
+    padding-top: 8%;
+    width: 40%;  
+    left:50%
+
+    
+}
+#h4Pong{
+    position :absolute;
+    left: 50%;
+
+}
+
+#oldPort{
+    pointer-events: auto;
+}
+
+#oldPortSS{
+    position: absolute;
+    padding-top: 8%;
+    width: 40%;    
+    left:5%
+}
+#h4Port{
+    position: absolute;
+    left: 5%;
+} 
+
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+
+html,body
+{
+    overflow: visible;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.webgl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+}
+/* #scene{
+    position: fixed;
+} */
+#block{
+    position: relative;
+    display: inline;
+    width: 70%;
+    left:5%;
+    top:5%;
+    background: #ac0a5077;
+
+}
+#text{
+    position: relative;
+    display: inline;
+    left:10%;
+    top:5%;
+    width:80%;
+    background: #0cd77877;
+
+}
+.inner{
+    pointer-events: auto;
+}
+
+ .nametag{
+     display: inline-block;
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #00000077;
+    border: 1px solid #ffffff77;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 100;
+    font-size: 14px;
+    cursor: help;
+    z-index: 1;
+}
+
+.contact-me{
+    margin-top: 12%;
+    margin-left: 5%;
+}
+
+
+
+#playPongSS{
+    position: relative;
+    padding-top: 14%;
+    width: 80%;  
+    left: 50%;
+    transform: translatex(-50%);
+    pointer-events:auto;
+    
+}
+#h4Pong{
+    position :absolute;
+    left: 50%;
+    transform: translatex(-50%);
+
+}
+
+
+
+#oldPortSS{
+    position: relative;
+    padding-top: 14%;
+    width: 80%;    
+    pointer-events:auto;
+    left: 50%;
+    transform: translatex(-50%);
+}
+#h4Port{
+    position :absolute;
+    left: 50%;
+    transform: translatex(-50%);
+} 
+}
+@media only screen and (max-width: 392px) {
+
+
+    #playPongSS{
+        position: relative;
+        padding-top: 22%;
+        width: 80%;  
+        left: 50%;
+        transform: translatex(-50%);
+        pointer-events:auto;
+        
+    }
+
+    #oldPortSS{
+        position: relative;
+        padding-top: 22%;
+        width: 80%;    
+        pointer-events:auto;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map*/
