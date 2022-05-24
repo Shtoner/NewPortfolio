@@ -42,6 +42,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
+                include: [/node_modules\/parallax.js\/dist\/parallax.js/],
                 use:
                 [
                     'babel-loader'
