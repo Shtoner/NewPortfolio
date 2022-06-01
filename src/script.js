@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import * as THREE from './three.min.js'
 import './stillies.css'
 import Parallax from './parallax.js'
 
@@ -57,7 +57,7 @@ const renderer = new THREE.WebGLRenderer({
     canvas:canvas
 })
 renderer.setClearAlpha(0.03)
-renderer.setSize(sizes.width,sizes.height)
+renderer.setSize(sizes.width*2,sizes.height*2)
 
 const mouse = new THREE.Vector2();
 const target = new THREE.Vector2();
