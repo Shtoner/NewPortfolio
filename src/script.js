@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import './stillies.css'
-import Parallax from 'parallax-js'
+import Parallax from './parallax.js'
 
 
 var scenes = document.getElementById('body');
