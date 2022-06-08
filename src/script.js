@@ -12,6 +12,8 @@ var parallaxInstance = new Parallax(scenes, {
 const blok = document.getElementsByClassName('.blok')
 console.log(blok)
 const canvas = document.querySelector('canvas.webgl')
+const can2 = document.querySelector('canvas.can2')
+const ctx=can2.getContext("2d");
 const scene = new THREE.Scene()
 // canvas.style.backgroundColor = '#00F8'
 const sizes={
@@ -93,6 +95,10 @@ function onResize( event ) {
 				
 }
 
+//for pong graphic
+var x=100
+var y=75
+var dx=1
 
 
 //controls.update() must be called after any manual changes to the camera's transform
@@ -102,7 +108,41 @@ function animate() {
 
 	requestAnimationFrame( animate );
 
+    //pong graphic code
+    ctx.clearRect(0,0,innerWidth,innerHeight)
+    var radius=15
     
+
+    ctx.strokeStyle='white'
+    ctx.beginPath();
+    ctx.moveTo(10, 10);
+    ctx.lineTo(10, 140);
+    ctx.stroke();
+    ctx.closePath()
+
+
+
+    ctx.beginPath();
+    ctx.moveTo(290, 10);
+    ctx.lineTo(290, 140);
+    ctx.stroke();
+    ctx.closePath()
+    
+    ctx.beginPath();
+    ctx.arc(x,y,15,0,Math.PI*2,false);
+    ctx.strokeStyle='white';
+    ctx.fillStyle='white'
+    ctx.fill()
+    ctx.stroke();
+
+    if(x+radius>290||x<25){
+        
+        dx=-dx
+    } 
+    console.log(dx)
+    x+=dx
+    
+    //needed for parallax
 	target.x = ( 1 - mouse.x ) * 0.0002;
     target.y = ( 1 - mouse.y ) * 0.0002;
     
