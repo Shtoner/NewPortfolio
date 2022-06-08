@@ -34,6 +34,7 @@ html,body
     left:5%;
     top:5%;
     background: #ac0a5077;
+    box-shadow: 5px 10px  #6d0b3677;
 
 }
 #text{
@@ -43,6 +44,8 @@ html,body
     top:5%;
     width:40%;
     background: #0cd77877;
+    box-shadow: 5px 10px  #04633677;
+
 
 }
 .inner{
@@ -73,7 +76,13 @@ html,body
     margin-top: 8%;
     margin-left: 5%;
     pointer-events: auto;
-
+    list-style: square;
+}
+li{
+    list-style: square;
+}
+#oli{
+    list-style: circle;
 }
 
 #playPong{

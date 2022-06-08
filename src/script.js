@@ -39,21 +39,21 @@ for(let i = 0; i < count * 3; i++) // Multiply by 3 for same reason
 particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3)) // Create the Three.js BufferAttribute and specify that each information is composed of 3 values
 
 const particlesMaterial = new THREE.PointsMaterial()
-particlesMaterial.size = 0.02
+particlesMaterial.size = 0.2
 particlesMaterial.sizeAttenuation = true
 particlesMaterial.color='black'
 
 const particles= new THREE.Points(particlesGeometry,particlesMaterial)
-particles.position.y=20
-particles.position.z=50
-particles.scale.x=6
-particles.scale.y=8
-particles.scale.z=-3
+particles.position.y+=20
+// particles.position.z=50
+particles.scale.x=18
+particles.scale.y=18
+particles.scale.z=18
 console.log(particles)
 
 
 scene.add(camera,particles)
-
+// camera.lookAt(particles)
 
 const renderer = new THREE.WebGLRenderer({
     canvas:canvas
@@ -85,7 +85,7 @@ function onMouseMove( event ) {
 function onResize( event ) {
 
 	const width = window.innerWidth;
-	const height = window.innerHeight;
+	const height = window.innerHeight + 3;
   
   windowHalf.set( width / 2, height / 2 );
 	
